@@ -78,17 +78,25 @@ def main():
         elif (origUnit == "yd" or origUnit == "yard") and (newUnit == "ft" or newUnit == "foot" or newUnit == "feet"):
             amount = amount * 3
             print("You have this many", newUnit, ':', amount)
+        elif (origUnit == "ft" or origUnit == "foot" or origUnit == "feet") and (newUnit == "yd" or newUnit == "yard"):
+            amount = amount / 3
+            print("You have this many", newUnit, ':', amount)
+        elif (origUnit == "yd" or origUnit == "yard") and (newUnit == "m" or newUnit == "meter"):
+            amount = amount * 0.9144
+            print("You have this many", newUnit, ':', amount)
+        elif (origUnit == "m" or origUnit == "meter") and (newUnit == "yd" or newUnit == "yard"):
+            amount = amount * 1.09361
+            print("You have this many", newUnit, ':', amount)
         else:
             print("Invalid input. Please read the help manual.")
-    elif type == "volume":
-        #
-        if (origUnit == "" or origUnit == "") and (newUnit == "m" or newUnit == "meter"):
-            amount = amount
-            print
-        elif (origUnit == "" or origUnit == "") and (newUnit == "" or newUnit == ""):
-        elif (origUnit == "" or origUnit == "") and (newUnit == "" or newUnit == ""):
-        elif (origUnit == "" or origUnit == "") and (newUnit == "" or newUnit == ""):
-        elif (origUnit == "" or origUnit == "") and (newUnit == "" or newUnit == ""):
+#    elif type == "volume":
+#        if (origUnit == "" or origUnit == "") and (newUnit == "m" or newUnit == "meter"):
+#            amount = amount
+#            print
+#        elif (origUnit == "" or origUnit == "") and (newUnit == "" or newUnit == ""):
+#        elif (origUnit == "" or origUnit == "") and (newUnit == "" or newUnit == ""):
+#        elif (origUnit == "" or origUnit == "") and (newUnit == "" or newUnit == ""):
+#        elif (origUnit == "" or origUnit == "") and (newUnit == "" or newUnit == ""):
     else:
         print("Invalid input. Please read the help manual.")
 main()
